@@ -1,6 +1,6 @@
 
-public class App {
-    public static void main(String[] args) throws Exception {   
+// public class App {
+//     public static void main(String[] args) throws Exception {   
     
 //Regras para voto obrigatório:
 //menor de 16 anos não vota
@@ -54,12 +54,42 @@ System.out.println(name.contains("R"));
 
 */
 
-String[] nomes = {"Darci", "Cris", "Alex", "Juraci"};
+// String[] nomes = {"Darci", "Cris", "Alex", "Juraci"};
 
-System.out.println(nomes[0]);
+// System.out.println(nomes[0]);
 
 
+// int x = 5;
+// int y = 2;
+// double z = x/y;
+// System.out.println(++z);
 
+// public class Empresa {
+//         private final String nome;
+//         public String getNome() {
+//             return this.nome;
+//         }     }
+
+
+//     }
+// }
+
+class Aplicacao {
+    public static void main(String[] args) {
+        System.out.println(new Carro("a"));
+        System.out.println(new Carro("x"));
+    }
+    static class Carro {
+        private String marca;
+        public Carro(String marca) {
+            this.marca = marca;
+        }
+        public boolean equals(Object o) {
+            Carro carro = (Carro) o;
+            return Objects.equals(marca, carro.marca);
+        }
+        public int hashCode() {
+            return 1;
+        }
     }
 }
-
